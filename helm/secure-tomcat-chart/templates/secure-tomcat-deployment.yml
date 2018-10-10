@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: secure-tomcat-container
-        image: tomcat:latest
+        image: secure-tomcat:latest
         ports:
         - name: tomcat-port
           containerPort: 8080
