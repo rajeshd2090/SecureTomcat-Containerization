@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: secure-tomcat-app
+  name: secure-tomcat-app
+  namespace: default
+spec:
+  ports:
+  - name: tomcat-port
+    nodePort: 31939
+    port: 8181
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: secure-tomcat-app
+  sessionAffinity: None
+  type: NodePort
+
