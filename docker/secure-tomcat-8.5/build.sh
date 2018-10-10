@@ -12,6 +12,8 @@ rm -rf apache-tomcat-8.5.34.tar.gz
 
 # Build docker image
 cd ..
-docker build . -t tomcat
+docker build . -t secure-tomcat
 
 rm -rf t_tomcat
+
+
