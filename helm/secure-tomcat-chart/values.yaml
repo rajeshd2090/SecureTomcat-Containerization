@@ -2,11 +2,11 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 1
 
+replicacount: 5
 image:
-  repository: nginx
-  tag: stable
+  repository: rajeshd2090/secure-tomcat
+  tag: latest
   pullPolicy: IfNotPresent
 
 nameOverride: ""
